@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>shop</title>
+	<link rel="stylesheet" type="text/css" href="css/shop.css">
+</head>
+<body>
+    <div id="products">
+    	<ul>
+	    	<li><a  onclick="goToPages('milk.html')">Milk</a></li>
+	    	<li><a onclick="goToPages('kefir.html')">Kefir</a></li>
+	    	<li><a onclick="goToPages('kumis.html')">Kumis</a></li>
+	    	<li><a onclick="goToPages('kurt.html')">Kurt</a></li>
+	    	<li><a onclick="goToPages('cream.html')">Cream</a></li>
+	    	<li><a onclick="goToPages('curd.html')">Curd</a></li>
+	    	<li><a onclick="goToPages('sour-cream.html')">Sour </a></li>
+	    	<li><a onclick="goToPages('yoghurt.html')">Yoghurts</a></li>
+	    	
+	    	<li><a onclick="goToPages('butter.html')">Butter</a></li>
+        </ul>
+    </div>
+    
+    <div id="sales">
+	    <div id="thisProduct">
+	    	<iframe id="page" src="milk.html"></iframe>
+	    </div>
+	    <div id="basket">
+	    	<p>Basket</p>
+		    <hr>
+		    <div>
+		    	
+		    </div>
+		    <button id="deliveryButton" onClick="window.parent.location='delivery.html';" >Checkout</button>
+		   
+    
+	    </div>
+    </div>
+
+
+    <script type="text/javascript">
+    
+
+    	function goToPages(name){
+    		document.getElementById('page').src = name;
+    	}
+    </script>
+
+</body>
+</html>

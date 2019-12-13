@@ -1,0 +1,192 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+#products{
+	top:40px;
+    bottom: 40px;
+	position: relative;
+	width: 100%;
+	background:#5181b8;
+	width: 100%;
+    height:40px;
+    border-top: 1px solid silver;
+	
+	
+}
+
+
+#products ul li{
+	float:left;
+	height:40px;
+	border-right: 0.1px solid silver;
+	font-size:1.1em;
+	line-height:43px;
+	width: 11.1%;
+	list-style-type: none;
+}
+
+#products ul li a{
+	float:left;
+	height:40px;
+	color:#EFEFEF;
+	width: 100%;
+	text-align: center;
+	font-family:Georgia;
+	text-decoration:none;
+	
+}
+	
+	
+#products ul li a:hover, #products ul li a.active{
+	text-decoration:none;
+	background:#306096; 
+	
+ 
+}
+
+/*Style of sales*/
+#sales{
+	top: 40px;
+	position: relative;
+	width: 100%;
+	height: 530px;
+    border-top: 1px solid silver;
+	border-bottom: 2px solid silver;
+	
+	
+
+}
+
+#thisProduct iframe{
+	width: 69.9%;
+	height: 530px;
+    border: none;
+	float: left;
+	border-right: 0.1px solid silver;
+	
+	
+	
+	
+}
+
+#basket {
+	float: right;
+	width: 30%;
+	height: 530px;
+	border: none;
+}
+
+p{
+	margin-left: 5%;
+	margin-top: 2%;
+	margin-bottom: 4%;
+	font-size: 1.1em;
+    font-family: Georgia;
+}
+button{
+	width: 20%;
+	height: 35px;
+	background-color: #5181b8;
+	border: none;
+	color: #FFFFFF;
+	font-size: 0.9em;
+	border-radius: 5px;
+	
+	position: relative;
+	
+	left: 40%;
+	
+}
+button:hover{
+	background-color: #306096;
+}
+
+@media only screen and (max-width: 1000px){
+	body{
+		font-size: 14px;
+	}
+	#products{
+		top: 35px;
+	}
+	#products ul li{
+		width: 11.08%;
+	}
+	#products, #products ul li, #products ul li a{
+		height: 35px;
+		line-height: 35px;
+	}
+
+	
+   
+		
+
+}
+
+@media only screen and (max-width: 766px){
+    body{
+		font-size: 12px;
+	}
+	#products{
+		top: 30px;
+	}
+	#products ul li{
+		width: 11.08%;
+	}
+	#thisProduct iframe{
+		width: 70%;
+		height: 500px;
+		height: 300px
+
+	}
+	#basket{
+       width: 29%;
+       height: 300px;
+	}
+	#sales{
+		height: 300px;
+	}
+	button{
+		width: 30%;
+		height: 10%;
+	}
+	
+    
+}
+@media only screen and (max-width: 500px){
+    body{
+		font-size: 10px;
+	}
+	#products, #sales{
+		top: 25px;
+	}
+	#products ul li{
+		width: 11.08%;
+	}
+	#basket{
+		float: left;
+		width:100%;
+		height: 100px;
+		border-top: 1.3px solid silver;
+		margin-top: 5px;
+
+		
+	}
+	
+	#thisProduct iframe{
+		width: 100%;
+		height: 150px;
+	}
+	#sales{
+		border: none;
+		height: 250px;
+	}
+	p{
+		margin-bottom: 2%;
+	}
+    button{
+    	width: 10%;
+    	height: 25%;
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Daity Products</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    
+    <div id="advertisement" class="js-overlay-campaign">
+        <div id="close" class="js-close-campaign"></div>
+        
+        <div id="first">
+            <p>On the first purchase free shipping</p>
+        </div>
+        <div id="second"><p>10% discount</p></div>
+    </div>  
+	
+    <header >
+    	
+    		<ul>
+    			<li><img src="images/logo.jpg" ></li>
+	    		<li><a  title="Home" onclick="slowScroll('body'), goToPages('hello.html')">Home</a></li>
+	    		<li><a  onclick="slowScroll('body'), goToPages('shop.html')">Products</a></li>
+	    		<li><a  title="Delivery" onclick="slowScroll('#delivery')">Delivery</a></li>
+	    		<li><a  title="Payment"  onclick="slowScroll('#payment')">Payment</a></li>
+	    		<li><a  title="About" onclick="slowScroll('#about-us')">About Us</a></li>
+	    		
+	    		<li><a href="login.html" title="Login">Login</a></li>
+    		</ul>
+    	
+    </header>
+    
+    <div id="one">
+        <iframe id="page" src="hello.html"></iframe>
+    </div>
+
+    <div id="delivery">
+    	<h1>Delivery</h1>
+    	<div id="info-delivery" class="left">
+    		
+    		   <h3>Cost of delivery</h3>
+    		
+	    	   <p >700 tenge throughout the city of Almaty, when ordering less than 7,000 tenge. When ordering more than 7,000 within the official borders of Almaty - for free.
+	    	   </p>
+	    	   <hr>
+	    	   <p>We deliver goods day to day - 7 days a week, from 10.00 to 22.00</p>
+	    	   <hr>
+	    	   <p><em>Attention!</em> Delivery is carried out only in Almaty, within the official boundaries of the city</p>
+    	  
+
+    	</div>
+
+    	<div id="map-of-Almaty" class="left">
+            <h4>Our office is open from 9:00 to 20:00</h4>
+        	<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2908.0831306928826!2d76.66686551486372!3d43.207745689139664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38834f7675d8a6c3%3A0x7b7d14aec270c056!2z0KPQvdC40LLQtdGA0YHQuNGC0LXRgiDQodGD0LvQtdC50LzQsNC9INCU0LXQvNC40YDQtdC70Y8!5e0!3m2!1sru!2skz!4v1575732133703!5m2!1sru!2skz" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+    	</div>
+    		
+    	
+    </div>
+
+    <div id="payment">
+    	<h1>Payment</h1>
+    	<div class="payment-block left">
+    	   <ul>
+    	   	<h3>We accept payment in any way, choose for yourself a convenient option:
+    	   </h3>
+    	   	<li>Cash to courier</li>
+    	   	<li>Online, Visa / MasterCard / AMEX / Union Pay</li>
+    	   	<li>Card to the courier (the courier will bring the POS terminal and give you a check)</li>
+    	   	<li>By bank transfer (for legal entities)</li>
+    	   </ul>
+    	   
+    	</div>
+
+    	<div class="payment-block left">
+    		<h3>If you have changed the amount when paying:</h3>
+    		<p>Perhaps this is due to the availability of weighted goods in the order. Since it is not always possible to gain the exact weight up to a gram, the order value may slightly change as a result.</p>
+			<p>If the amount turned out to be less, and you have already paid online, you will see the changed amount charged in the statement within 3 business days.</p>
+
+    	</div>
+
+    	<div  class="payment-block left">
+    		<h3>Important! How is the amount returned:</h3>
+    		<p>1. The return of the amount does not occur by replenishment of funds on the card - the amount of the write-off itself on the day of placing the order changes.</p>
+			<p>2. If you have installed SMS banking, you will receive an SMS about blocking the amount immediately after registration and you will see a blocked amount until the actual weighing of the goods. If the total amount charged is less, the call center will warn you about this before leaving the courier.</p>
+
+    		
+    	</div>
+    	
+    		  
+    		
+	    	   
+
+    	
+    	
+    </div>
+    <div id="about-us" >
+    	<div class="info-store">
+    	 	<p>&copy; 2019. All rights reserved</p>
+    	 </div>
+
+    	<div class="info-store">
+    		<h2>Dairy Product</h2>
+    		
+
+    	</div>
+    	 
+    	<ul>
+    		<p>Phone of delivery of Almaty:</p>
+    		<li>+7(776) 327 47 67</li>
+    		<li>+7(702) 102 44 66</li>
+    	</ul>
+    </div>
+    		
+    
+
+
+    	
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+    function slowScroll(id) {
+      $('html, body').animate({
+        scrollTop: $(id).offset().top
+      }, 500);
+    }
+
+    $(document).on("scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+        $("header").attr("class", "fixed");
+    });
+
+
+    $('.js-close-campaign').click(function() { 
+    $('.js-overlay-campaign').fadeOut();
+    
+     });
+
+  </script>
+  <script type="text/javascript">
+    
+
+        function goToPages(name){
+            document.getElementById('page').src = name;
+        }
+    </script>  
+
+</body>
+</html>

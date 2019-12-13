@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delivery</title>
+    <link rel="stylesheet" type="text/css" href="css/delivery.css">
+</head>
+<body>
+    <header>
+    	<a href="main.html">&larr;</a>
+    	<p id="registration">Delivery</p>
+    </header>
+    <div>
+    	<form>
+    		<h4>Your data </h4>
+    		
+            
+            <label for="phone">Phone: </label><br>
+            <select><option value="+7">+7</option></select>
+			<input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" placeholder="Enter your phone number" name="phone" class="one" required><br>
+
+			
+			<label  for="code">Code:</label><br>
+			<input type="number"  name="code" id="code" placeholder="Enter sms code">
+			<button type="button" name="sms" id="sms" >To get the code</button><br>
+
+            <h4>Address</h4>
+            <label >City:</label><br>
+			<select id="opCity" class="one" ><option value="Almaty">Almaty</option></select><br>
+
+			<label for="street">Street:</label><br>
+			<input type="text" name="street" class="one" placeholder="Enter your street"><br>
+
+				<label for="house">House:</label><br>
+			<input type="text" name="house" class="one" placeholder="Enter number your house "><br>
+
+				<label for="intercom">Intercom:</label><br>
+			<input type="text" name="intercom" class="one" placeholder="Enter number your intercom"><br>
+
+				<label for="floor">Floor:</label><br>
+			<input type="text" name="floor" class="one" placeholder="Enter number your floor"><br>
+
+				<label for="apartment">Apartment:</label><br>
+			<input type="text" name="apartment" class="one" placeholder="Enter number your apartment"><br>
+
+			<p>- The order will be delivered within 1 hour.</p>
+			
+
+            <p>- Cost of 700 tg. When ordering over 7000 tg for free.</p>
+			
+
+			<button type="button"  id="register">Checkout</button> 
+    	</form>
+    </div>
+</body>
+</html>

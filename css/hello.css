@@ -1,0 +1,188 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-size: 16px;
+}
+#background{
+	position: relative;
+	top: 40px;
+	width: 100%;
+	height: 585px;
+	background-color: #000000;
+	opacity: 1;
+}
+
+img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+
+}
+
+#welcome{
+	width: 30%;
+	height: 70%;
+	background-color:#000000;
+	position: absolute;
+	top: 15%;
+	left: 35%;
+	opacity: 0.7;
+
+
+}
+hr{
+	width: 80%;
+	position: absolute;
+	left: 10%;
+
+}
+h1{
+	
+	font-family: pt serif; 
+	font-size: 4em;
+	color: #fff;
+	letter-spacing: 5px;
+	text-align: center;
+	opacity: 1;
+
+
+
+}
+h5{
+	
+	font-family: pt serif; 
+	font-size: 1.6em;
+	color: #fff;
+	letter-spacing: 2px;
+	opacity: 1;
+	text-align: center;
+	margin-top: 3%;
+}
+p{
+	font-family: pt serif; 
+	font-size: 1.4em;
+	color: #fff;
+	letter-spacing: 2px;
+	opacity: 1;
+	text-align: center;
+
+}
+#info{
+	width: 80%;
+	height: 45%;
+	border: 1px solid white;
+	position: absolute;
+	top: 35%;
+	left: 8%;
+	padding: 2%;
+	line-height: 300%;
+
+
+}
+#welcome a{
+	position: absolute;
+	bottom: 3%;
+	right:8%;
+	width:auto;
+	height: 5%;
+	border:1px solid white;
+	color: #fff;
+	opacity: 1;
+	font-size: 1em;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+
+}
+#welcome a:hover{
+	background-color: #fff;
+	color: #000000;
+}
+
+#clickVideo {
+    position: absolute;
+	bottom: 12%;
+	left:7%;
+	width:auto;
+	height: 4%;
+	border:1px solid white;
+	color: #fff;
+	opacity: 1;
+	font-size: 1.1em;
+	padding: 0.5%;
+	text-align: center;
+	text-decoration: none;
+
+}
+#clickVideo:hover{
+	background-color: #fff;
+	color: #000000;
+}
+
+
+@media only screen and (max-width: 1000px){
+	#background{
+		top: 35%;
+		height: 500px;
+	}
+    body{
+    	font-size: 11px;
+    }
+     #welcome{
+    	height: 57%;
+
+    }
+    #info{
+    	height: 47%;
+    }
+
+	
+   
+		
+
+}
+
+@media only screen and (max-width: 766px){
+    #background{
+		top: 30%;
+		height: 400px;
+	}
+	 body{
+    	font-size: 8px;
+    }
+     #welcome{
+     	width: 55%;
+     	left: 22%;
+    	height: 55%;
+
+    }
+    #info{
+    	height: 45%;
+    }
+	
+	
+    
+}
+@media only screen and (max-width: 500px){
+	#background{
+		top: 25%;
+		height: 300px;
+	}
+	 body{
+    	font-size: 5px;
+    }
+    #welcome{
+    	height: 55%;
+    	width: 50%;
+    	left: 25%;
+
+    }
+    #info{
+    	height: 40%;
+    }
+    
+	
+    
+}
